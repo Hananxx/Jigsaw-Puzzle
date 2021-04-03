@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigsaw Puzzle</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- audio -->
+    <audio controls autoplay loop>
+        <source src="assets/Always-With-Me-Youmi-Kimura.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <!-- --- -->
+    <!-- home screen -->
+    <!-- --- -->
+    <div id="homeScreen">
+        <div>
+            <h1>Jigsaw Puzzle</h1>
+            <button id="startGame">Start</button>
+            <h3>game developed by hanan</h3>
+        </div>
+    </div>
+    <!-- --- -->
+    <!-- game screen -->
+    <!-- --- -->
+    <div id="gameScreen">
+        <div class='gameArea'>
+            <div class='pieces'></div>
+            <div class='puzzle'></div>
+        </div>
+        <div class="buttons">
+            <button id="startPuzzle">Start Puzzle</button>
+            <button id="backBtn">Back</button>
+            <button id="nextPic">Next Puzzle</button>
+            <div class="completedPuzzle"></div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0/dist/confetti.browser.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
